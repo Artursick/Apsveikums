@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(winter-lake.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+
+}
+
+
+
+.santa{
+    width: 300px;
+    animation-name: movingSanta;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes movingSanta{
+    0% {
+        left: -1000px;
+
+    }
+    10%, 30%, 50%, 70%, 90%{
+        transform: rotate(10deg);
+
+    }
+    20% ,40%, 60%, 80% {
+        transform: rotate(-10deg);
+        
+    }
+    100%{
+        transform: rotate(-10deg);
+        left: 100vw
+
+    }
+
+
+
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
